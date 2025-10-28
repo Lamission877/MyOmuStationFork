@@ -336,7 +336,8 @@ namespace Content.Server.Abilities.Mime
             mimePowers.Enabled = true;
             mimePowers.ReadyToRepent = false;
             mimePowers.VowBroken = false;
-            AddComp<MutedComponent>(uid);
+            var muted = AddComp<MutedComponent>(uid);
+            muted.IgnoreSpeechCheck = true;
             if (mimePowers.PreventWriting)
             {
                 EnsureComp<BlockWritingComponent>(uid, out var illiterateComponent);
