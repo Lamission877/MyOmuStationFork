@@ -187,7 +187,8 @@ namespace Content.Server.Abilities.Mime
 
         private void OnComponentInit(EntityUid uid, MimePowersComponent component, ComponentInit args)
         {
-            EnsureComp<MutedComponent>(uid);
+            var muted = EnsureComp<MutedComponent>(uid);
+            muted.IgnoreSpeechCheck = true;
             if (component.PreventWriting)
             {
                 EnsureComp<BlockWritingComponent>(uid, out var illiterateComponent);

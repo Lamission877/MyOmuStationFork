@@ -12,6 +12,11 @@ namespace Content.Shared.Speech.Muting
     [RegisterComponent, NetworkedComponent]
     public sealed partial class MutedComponent : Component
     {
+        /// <summary>
+        /// Will ignore RequiresSpeech check when applying mute. (OmuStation)
+        /// </summary>
+        [DataField]
+        public bool IgnoreSpeechCheck = false; //Blocks Sign Language | OmuStation Change
 
     }
 }

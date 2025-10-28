@@ -61,8 +61,8 @@ namespace Content.Server.Speech.Muting
             // TODO something better than this.
 
             var language = _languages.GetLanguage(uid);
-            if (!language.SpeechOverride.RequireSpeech)
-                return; // Cannot mute if there's no speech involved
+            if (!language.SpeechOverride.RequireSpeech && !component.IgnoreSpeechCheck)
+                return; // Cannot mute if there's no speech involved (unless you want it to.)
 
             if (HasComp<MimePowersComponent>(uid))
                 _popupSystem.PopupEntity(Loc.GetString("mime-cant-speak"), uid, uid);
