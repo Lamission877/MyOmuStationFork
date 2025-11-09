@@ -61,7 +61,7 @@ namespace Content.Server.Speech.Muting
             // TODO something better than this.
 
             var language = _languages.GetLanguage(uid);
-            if (!language.SpeechOverride.RequireSpeech && !component.IgnoreSpeechCheck)
+            if (!language.SpeechOverride.RequireSpeech && !component.IgnoreSpeechCheck) // Omu
                 return; // Cannot mute if there's no speech involved (unless you want it to.)
 
             if (HasComp<MimePowersComponent>(uid))
