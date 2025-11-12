@@ -14,69 +14,111 @@
   components:
   - type: TranslatorImplant
     spoken:
-      - Eldritch
-      - Chittin
-      - RootSpeak
-      - ValyrianStandard
-      - Marish
-      - Moffic
-      - Schechi
-      - NewKinPidgin #Ka'rakk
-      - Nekomimetic
-      - Draconic     #Sinta'Unathi
-      - Azaziba
-      - Calcic
+      - TauCetiBasic
       - Bubblish
-      - SiikMaas
-      - NalRasan
-      - SiikTajr
-      - YaSsa
-      - Delvahii
+      - Calcic
       - Canilunzt
+      - Chittin
+      - DroneTalk
       - Elyran
       - Freespeak
-      - NovuNederic
-      - SolCommon
-      - TauCetiBasic
+      - NewKinPidgin #Ka'rakk
       - Tradeband
-      - Mouse
+      - Marish
+      - Schechi
+      - SiikMaas
+      - SiikTajr
+      - Draconic #Sinta'Unathi
+      - RobotTalk
+      - RootSpeak
+      - Moffic
+      - Nekomimetic
+      - Nehina
+      - NovuNederic
       - Sign
-      - Monkey
-      - Kobold
       - SpaceItalian
+      - SolCommon
+      - ValyrianStandard
+      - Xeeplian
+      - Azaziba
+      - Delvahii
+      - Eldritch
+      - NalRasan
+      - YaSsa
+      - Blob
+      - Bingle
+      - Cat
       - Cheval
+      - Crab
+      - Dog
+      - FloorGoblin
+      - Fox
+      - Monkey
+      - Mouse
+      - Chicken
+      - Duck
+      - Cow
+      - Sheep
+      - Kangaroo
+      - Pig
+      - Kobold
+      - Hissing
+      - Penguin
+      - Deer
+      - Xeno
     understood:
-      - Eldritch
-      - Chittin
-      - RootSpeak
-      - ValyrianStandard
-      - Marish
-      - Moffic
-      - Schechi
-      - NewKinPidgin #Ka'rakk
-      - Nekomimetic
-      - Draconic     #Sinta'Unathi
-      - Azaziba
-      - Calcic
+      - TauCetiBasic
       - Bubblish
-      - SiikMaas
-      - NalRasan
-      - SiikTajr
-      - YaSsa
-      - Delvahii
+      - Calcic
       - Canilunzt
+      - Chittin
+      - DroneTalk
       - Elyran
       - Freespeak
-      - NovuNederic
-      - SolCommon
-      - TauCetiBasic
+      - NewKinPidgin #Ka'rakk
       - Tradeband
-      - Mouse
+      - Marish
+      - Schechi
+      - SiikMaas
+      - SiikTajr
+      - Draconic #Sinta'Unathi
+      - RobotTalk
+      - RootSpeak
+      - Moffic
+      - Nekomimetic
+      - Nehina
+      - NovuNederic
       - Sign
-      - Monkey
-      - Kobold
       - SpaceItalian
+      - SolCommon
+      - ValyrianStandard
+      - Xeeplian
+      - Azaziba
+      - Delvahii
+      - Eldritch
+      - NalRasan
+      - YaSsa
+      - Blob
+      - Bingle
+      - Cat
       - Cheval
+      - Crab
+      - Dog
+      - FloorGoblin
+      - Fox
+      - Monkey
+      - Mouse
+      - Chicken
+      - Duck
+      - Cow
+      - Sheep
+      - Kangaroo
+      - Pig
+      - Kobold
+      - Hissing
+      - Penguin
+      - Deer
+      - Xeno
 
 - type: entity
   parent: BaseSubdermalImplant
