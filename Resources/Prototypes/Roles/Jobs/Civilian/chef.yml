@@ -109,7 +109,8 @@
   id: ChefGear
   equipment:
     shoes: ClothingShoesColorBlack
-    id: ChefPDA
+    # id: ChefPDA
+    # ^ Omu Change - Added custom PDAs for most roles
     ears: ClothingHeadsetService
     belt: ClothingBeltChefFilled
   #storage:

@@ -24,3 +24,25 @@
   components:
   - type: Pda
     id: PrisonerIDCardPerma
+
+- type: entity
+  parent: ChefPDA
+  id: ButcherPDA
+  name: butcher PDA
+  description: Blood splatters never really bothered you.
+  components:
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-butcher
+  - type: Pda
+    id: ChefIDCard
+  - type: Icon
+    sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-butcher
+  - type: Sprite
+    sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-butcher
+  - type: PdaBorderColor
+    borderColor: "#c76e6e"

@@ -8,7 +8,7 @@
   loadouts:
   - ResearchDirectorScienceGlasses
   - ResearchDirectorScienceHud
- 
+
 # Transit Prisoner
 
 - type: loadoutGroup
@@ -63,3 +63,13 @@
   loadouts:
   - PrisonerEnviroglovesBlack
   - PrisonerEnviroglovesWhite
+
+#Custom PDAs
+
+- type: loadoutGroup
+  id: ChefPDA
+  name: loadout-group-chef-id
+  loadouts:
+  - ChefPDA
+  - ButcherPDA
+
