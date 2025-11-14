@@ -25,6 +25,7 @@
   - type: Pda
     id: PrisonerIDCardPerma
 
+#New Alternative PDAs/Titles!
 - type: entity
   parent: ChefPDA
   id: ButcherPDA
@@ -37,7 +38,7 @@
         !type:String
         pda-butcher
   - type: Pda
-    id: ChefIDCard
+    id: ButcherIDCard
   - type: Icon
     sprite: _Omu/Objects/Devices/pda.rsi
     state: pda-butcher
@@ -45,4 +46,33 @@
     sprite: _Omu/Objects/Devices/pda.rsi
     state: pda-butcher
   - type: PdaBorderColor
-    borderColor: "#c76e6e"
+    borderColor: "#ccbcbc"
+
+
+- type: entity
+  parent: BaseWidePDA
+  id: ExorcistPDA
+  name: exorcist PDA
+  description: Has no function other than looking cool.
+  components:
+  - type: Pda
+    id: ExorcistIDCard
+    penSlot:
+      startingItem: Pen
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-exorcist
+  - type: Sprite
+    sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-exorcist
+  - type: Icon
+    sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-exorcist
+  - type: PdaBorderColor
+    borderColor: "#2c2633"

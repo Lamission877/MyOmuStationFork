@@ -91,3 +91,20 @@
     - Recyclable
   - type: StaticPrice
     price: 0
+
+#New alternative Titles!
+- type: entity
+  parent: ChefIDCard
+  id: ButcherIDCard
+  name: butcher ID card
+  components:
+  - type: PresetIdCard
+    altTitle: job-name-chef-butcher
+
+- type: entity
+  parent: ChaplainIDCard
+  id: ExorcistIDCard
+  name: exorcist ID card
+  components:
+  - type: PresetIdCard
+    altTitle: job-name-chaplain-exorcist

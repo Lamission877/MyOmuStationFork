@@ -27,4 +27,7 @@ public sealed partial class PresetIdCardComponent : Component
 
     [DataField("name")]
     public string? IdName;
+
+    [DataField("altTitle")]
+    public LocId? altTitle = null;
 }

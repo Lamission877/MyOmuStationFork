@@ -10,6 +10,17 @@
 	  "name" : "pda-butcher"
   },
   {
+      "name": "pda-exorcist",
+      "delays": [
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+  },
+  {
 	  "name" : "id_overlay"
   },
   {
@@ -17,6 +28,27 @@
   },
   {
 	  "name" : "pda"
+  },
+  {
+      "name": "id_overlay_wide"
+  },
+  {
+      "name": "equipped-BELT",
+      "directions": 4
+  },
+  {
+      "name": "inhand-left",
+      "directions": 4
+  },
+  {
+      "name": "inhand-right",
+      "directions": 4
+  },
+  {
+      "name": "insert_overlay"
+  },
+  {
+      "name": "light_overlay_wide"
   }
   ]
 }
