@@ -44,9 +44,9 @@
       time: 90000 # 25 hours
     - !type:AgeRequirement
       requiredAge: 21
-#    - !type:SpeciesRequirement # Goob - None Felinid	
-#      inverted: true	
-#      species:	
+#    - !type:SpeciesRequirement # Goob - None Felinid
+#      inverted: true
+#      species:
 #      - Felinid #Omu, add back Felinid
   goobcoins: 45
   weight: 20
@@ -84,7 +84,7 @@
   equipment:
     eyes: ClothingEyesGlassesBSO
     #gloves: ClothingHandsGlovesCombat - Goobstation, moved to loadouts
-    id: BlueshieldPDA
+    #id: BlueshieldPDA - Omustation, moved to loadouts
     ears: ClothingHeadsetAltBlueshield
     belt: ClothingBeltAssaultFilled
     pocket1: UniqueBlueshieldOfficerLockerTeleporter

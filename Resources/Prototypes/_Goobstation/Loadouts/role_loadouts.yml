@@ -98,6 +98,7 @@
   - NanotrasenRepresentativeNeck
   - NanotrasenRepresentativeShoes
   - NanotrasenRepresentativeBelt
+  - NanotrasenRepresentativePDA
   - Glasses
   - Trinkets
   - Animals
@@ -119,6 +120,7 @@
   - BlueshieldOfficerNeck
   - BlueshieldOfficerMask
   - BlueshieldOfficerShoes
+  - BlueshieldPDA
   - Trinkets
   - Animals
   - GroupSpeciesBreathTool

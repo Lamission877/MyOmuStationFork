@@ -154,9 +154,9 @@
     - !type:DepartmentTimeRequirement
       department: Command
       time: 14400 # 4 hours
-#    - !type:SpeciesRequirement # Goob - None Felinid	
-#      inverted: true	
-#      species:	
+#    - !type:SpeciesRequirement # Goob - None Felinid
+#      inverted: true
+#      species:
 #      - Felinid #Omu, add back Felinid
       #any MRP using our code might eventually want to use it
     # - !type:SaturationRequirement # MisandryBox - no neon hair on captain
@@ -185,7 +185,7 @@
     shoes: ClothingShoesBootsLaceup
     eyes: ClothingEyesGlassesSunglasses
     #gloves: ClothingHandsGlovesCaptain - Goobstation, moved to loadouts
-    id: CaptainPDA
+    #id: CaptainPDA - Omustation, moved to loadouts
     ears: ClothingHeadsetAltCommand
   storage:
     back:

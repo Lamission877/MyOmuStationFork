@@ -152,9 +152,9 @@
     - !type:DepartmentTimeRequirement
       department: Command
       time: 9000 # 2.5 hours
-#    - !type:SpeciesRequirement # Goob - None Felinid	
-#      inverted: true	
-#      species:	
+#    - !type:SpeciesRequirement # Goob - None Felinid
+#      inverted: true
+#      species:
 #      - Felinid #Omu, add back Felinid
   goobcoins: 40 #Goob content
   weight: 20
@@ -200,7 +200,7 @@
   id: HoPGear
   equipment:
     shoes: ClothingShoesColorBrown
-    id: HoPPDA
+    #id: HoPPDA - OmuStation, moved to loadouts
     #gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard
