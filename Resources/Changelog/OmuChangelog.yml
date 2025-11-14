@@ -1139,3 +1139,13 @@ Entries:
         CTs!
   id: 134
   time: '2025-11-14T03:12:52.0000000+00:00'
+- author: 3PonPon3
+  changes:
+    - type: Tweak
+      message: >-
+        The borgs and Station AI went to school and now UNDERSTAND (not speak)
+        all six common languages (all six selectable languages in traits), with
+        the Station AI also knowing how to SPEAK them all, minus sign. No hands
+        to throw gang signs with.
+  id: 135
+  time: '2025-11-14T07:00:43.0000000+00:00'
