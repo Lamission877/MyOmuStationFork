@@ -84,8 +84,10 @@
     accentHColor: "#4e0607"
   - type: Sprite
     sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-althop
   - type: Icon
     sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-althop
 
 - type: entity
   parent: CaptainPDA
@@ -100,8 +102,10 @@
        pda-altcaptain
   - type: Sprite
     sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-altcaptain
   - type: Icon
     sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-altcaptain
   - type: PdaBorderColor
     borderColor: "#103152"
     accentVColor: "#e6a345"
@@ -121,5 +125,7 @@
     borderColor: "#2569b0"
   - type: Sprite
     sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-altblueshield
   - type: Icon
     sprite: _Omu/Objects/Devices/pda.rsi
+    state: pda-altblueshield
