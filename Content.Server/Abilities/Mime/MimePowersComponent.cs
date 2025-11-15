@@ -86,7 +86,7 @@ namespace Content.Server.Abilities.Mime
         /// Does this component prevent the mime from writing on paper while their vow is active?
         /// </summary>
         [DataField]
-        public bool PreventWriting = false;
+        public bool PreventWriting = false; //OmuStation - Mime Punishment Alliviation.
 
         /// <summary>
         /// What message is displayed when the mime fails to write?
@@ -95,7 +95,7 @@ namespace Content.Server.Abilities.Mime
         public LocId FailWriteMessage = "paper-component-illiterate-mime";
 
         [DataField]
-        public float PunishmentChance = 0.25f;
+        public float PunishmentChance = 0.0f; //Omustation - The punishments need reworking. RRing over breaking vow is not funny.
 
     }
 }

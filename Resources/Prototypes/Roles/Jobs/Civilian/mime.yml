@@ -136,7 +136,7 @@
   - !type:AddComponentSpecial
     components:
     - type: MimePowers
-      preventWriting: true
+      #preventWriting: true Omustation, Mime punishment alliviation.
     - type: FrenchAccent
 
 - type: startingGear

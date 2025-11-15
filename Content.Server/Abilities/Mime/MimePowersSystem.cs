@@ -188,8 +188,8 @@ namespace Content.Server.Abilities.Mime
         private void OnComponentInit(EntityUid uid, MimePowersComponent component, ComponentInit args)
         {
             var muted = EnsureComp<MutedComponent>(uid); // Omu
-            muted.IgnoreSpeechCheck = true; // Omu
-            if (component.PreventWriting)
+            muted.IgnoreSpeechCheck = true; // Omu - Language Prevention for mimes
+            if (component.PreventWriting) // Omu - PreventWriting is set to false.
             {
                 EnsureComp<BlockWritingComponent>(uid, out var illiterateComponent);
                 illiterateComponent.FailWriteMessage = component.FailWriteMessage;
@@ -273,7 +273,7 @@ namespace Content.Server.Abilities.Mime
             _alertsSystem.ShowAlert(uid, mimePowers.VowBrokenAlert);
             _actionsSystem.RemoveAction(uid, mimePowers.InvisibleWallActionEntity);
             if (_rand.Prob(mimePowers.PunishmentChance)) {Punish(uid);} // Goobstation - Mime Enforcement
-        }
+        }               //Omustation - PunishmentChance set to 0.
 
         private void Punish(EntityUid ent) // Goobstation - Mime Enforcement
         {
