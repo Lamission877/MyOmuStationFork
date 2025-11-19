@@ -73,3 +73,13 @@
   - ChefPDA
   - ButcherPDA
 
+# NTR
+
+- type: loadoutGroup
+  id: NanotrasenRepresentativerMask
+  name: loadout-group-ntr-mask
+  minLimit: 0
+  loadouts:
+  - NanotrasenRepresentativerMaskLollypop
+
+
