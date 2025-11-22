@@ -96,8 +96,8 @@ public sealed class PresetIdCardSystem : EntitySystem
         }
 
         _accessSystem.SetAccessToJob(uid, job, extended);
-        if(id.altTitle != null)
-            _cardSystem.TryChangeJobTitle(uid, Loc.GetString(id.altTitle));
+        if(id.AltTitle != null)
+            _cardSystem.TryChangeJobTitle(uid, Loc.GetString(id.AltTitle));
         else _cardSystem.TryChangeJobTitle(uid, job.LocalizedName);
         _cardSystem.TryChangeJobDepartment(uid, job);
 
