@@ -15,6 +15,7 @@
 using Content.Shared.Armor; // Goobstation - Armor resisting syringe gun
 using Content.Server.Body.Components;
 using Content.Server.Body.Systems;
+using Content.Shared.Hands; // Omu
 using Content.Server.Chemistry.Components;
 using Content.Shared.Chemistry.Components; // GoobStation
 using Content.Shared.Chemistry.EntitySystems;
@@ -52,7 +53,7 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
         SubscribeLocalEvent<SolutionInjectOnEmbedComponent, EmbedEvent>(HandleEmbed);
         SubscribeLocalEvent<MeleeChemicalInjectorComponent, MeleeHitEvent>(HandleMeleeHit);
         SubscribeLocalEvent<SolutionInjectWhileEmbeddedComponent, InjectOverTimeEvent>(OnInjectOverTime);
-
+        SubscribeLocalEvent<SolutionInjectOnPickupComponent, GotEquippedHandEvent>(HandlePickup); //Omu
         SubscribeLocalEvent<SolutionInjectOnEmbedComponent, LandEvent>(OnEmbedLand);
         SubscribeLocalEvent<SolutionInjectWhileEmbeddedComponent, LandEvent>(OnWhileEmbeddedLand);
     }
@@ -81,6 +82,10 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
         DoInjection((entity.Owner, entity.Comp), args.EmbeddedIntoUid);
     }
 
+    private void HandlePickup(Entity<SolutionInjectOnPickupComponent> entity, ref GotEquippedHandEvent args)
+    {
+        DoInjection((entity.Owner, entity.Comp), args.User);
+    }
     private void DoInjection(Entity<BaseSolutionInjectOnEventComponent> injectorEntity, EntityUid target, EntityUid? source = null)
     {
         TryInjectTargets(injectorEntity, [target], source);
@@ -202,3 +207,4 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
         return anySuccess;
     }
 }
+
