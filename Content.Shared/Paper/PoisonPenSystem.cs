@@ -14,9 +14,13 @@ public sealed class PoisonPenSystem : EntitySystem
 
     private void AfterInteract(Entity<PoisonPenComponent> ent, AfterInteractEvent args)
     {
-        if(TryComp<PaperComponent>(args.Target, out var paper))
+        if(HasComp<PaperComponent>(args.Target))
         {
             return;
+        }
+        if(TryComp<SolutionInjectOnPickupComponent(args.Target, out var poison))
+        {
+            _solutionContainer.TryGetSolution(ent.Owner, ent.Comp.Solution, out var solution);
         }
     }
 }
