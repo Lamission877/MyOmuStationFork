@@ -1,10 +1,8 @@
+using Robust.Shared.Serialization;
 
-using Content.Shared.Paper;
-
-namespace Content.Shared.Paper;
+namespace Content.Server.Paper;
 
 [RegisterComponent]
-
 public sealed partial class PoisonPenComponent : Component
 {
 }
