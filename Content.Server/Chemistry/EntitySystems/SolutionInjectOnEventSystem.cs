@@ -37,7 +37,7 @@ namespace Content.Server.Chemistry.EntitySystems;
 /// System for handling the different inheritors of <see cref="BaseSolutionInjectOnEventComponent"/>.
 /// Subscribes to relevent events and performs solution injections when they are raised.
 /// </summary>
-public sealed class SolutionInjectOnCollideSystem : EntitySystem
+public sealed partial class SolutionInjectOnCollideSystem : EntitySystem
 {
     [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
@@ -57,7 +57,7 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
         SubscribeLocalEvent<SolutionInjectOnEmbedComponent, EmbedEvent>(HandleEmbed);
         SubscribeLocalEvent<MeleeChemicalInjectorComponent, MeleeHitEvent>(HandleMeleeHit);
         SubscribeLocalEvent<SolutionInjectWhileEmbeddedComponent, InjectOverTimeEvent>(OnInjectOverTime);
-        SubscribeLocalEvent<SolutionInjectOnPickupComponent, GotEquippedHandEvent>(HandlePickup); //Omu
+        SubscribeLocalEvent<SolutionInjectOnPickupComponent, GotEquippedHandEvent>(HandlePickup); //Omu - Handled in Omu Folder
         SubscribeLocalEvent<SolutionInjectOnEmbedComponent, LandEvent>(OnEmbedLand);
         SubscribeLocalEvent<SolutionInjectWhileEmbeddedComponent, LandEvent>(OnWhileEmbeddedLand);
         // Goobstation
@@ -88,10 +88,6 @@ public sealed class SolutionInjectOnCollideSystem : EntitySystem
         DoInjection((entity.Owner, entity.Comp), args.EmbeddedIntoUid);
     }
 
-    private void HandlePickup(Entity<SolutionInjectOnPickupComponent> entity, ref GotEquippedHandEvent args)
-    {
-        DoInjection((entity.Owner, entity.Comp), args.User);
-    }
     private void DoInjection(Entity<BaseSolutionInjectOnEventComponent> injectorEntity, EntityUid target, EntityUid? source = null)
     {
         TryInjectTargets(injectorEntity, [target], source);

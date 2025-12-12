@@ -1,0 +1,18 @@
+- type: entity
+  name: poisoner's pen
+  parent: Pen
+  id: PoisonPen
+  description: A regular looking pen from the outside, it's able to embue solutions into paper, transferring into a target very efficiently.
+  components:
+  - type: PoisonPen
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        maxVol: 15
+  - type: RefillableSolution
+    solution: injector
+  - type: ExaminableSolution
+    solution: injector
+  - type: DrainableSolution
+    solution: injector
+

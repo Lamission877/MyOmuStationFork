@@ -5,3 +5,4 @@ namespace Content.Server.Chemistry.Components;
 /// </summary>
 [RegisterComponent]
 public sealed partial class SolutionInjectOnPickupComponent : BaseSolutionInjectOnEventComponent { }
+

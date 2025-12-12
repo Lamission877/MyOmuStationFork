@@ -216,6 +216,9 @@
         reagents:
         - ReagentId: Fiber
           Quantity: 1
+      poison:
+        maxVol: 15 #Omu - Poisoner Pen addition
+
   - type: Item
     size: Tiny
   - type: PhysicalComposition #Goobstation - Recycle update
